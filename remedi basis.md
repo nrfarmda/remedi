@@ -11,7 +11,7 @@ CREATE table tabel_guru (
     -> tanggal_lahir varchar(25) not null);
 ```
 ## hasil
-![](remed/aset/ss.png)
+![](aset/ss.png)
 ## analisis
 - `id_guru`: Kolom ini adalah kunci utama, artinya kolom ini mengidentifikasi secara unik setiap record dalam tabel. Ini adalah tipe data integer dengan panjang maksimal 10 digit dan wajib diisi (BUKAN NULL).
 - `nama_depan`: Kolom ini menyimpan nama depan guru dan wajib diisi (BUKAN NULL).
@@ -39,7 +39,7 @@ INSERT INTO tabel_guru
     -> (4, "Rusdyansyar", null, "Pemrograman Berorientasi Objek", "Asisten Kepala Sekolah", 25, "1996-01-21");
 ```
 ## hasil
-![](remed/aset/ss1.png)
+![](aset/ss1.png)
 ## analisis
 **Kolom tabel_guru:**
 - `id`: Kolom ini kemungkinan besar merupakan kolom identitas utama (primary key) yang digunakan untuk mengidentifikasi setiap baris data secara unik.
@@ -64,7 +64,7 @@ Pernyataan `INSERT` ini akan berhasil menambahkan empat baris data ke tabel `tab
     -> values (5, "ani", "dya", "Bahasa Inggris", null, 17, "2006-10-08");
 ```
 ## hasil
-![](remed/aset/ss2.png)
+![](aset/ss2.png)
 ## analisis
 - `id_guru`: Nilai yang dimasukkan adalah `5`. Ini menandakan bahwa data guru dengan ID 5 akan dimasukkan ke dalam tabel.
 - `nama_depan`: Nilai yang dimasukkan adalah `"ani"`. Ini adalah nama depan guru.
@@ -81,7 +81,7 @@ Pernyataan `INSERT INTO tabel_guru` menambahkan data satu guru ke tabel `tabel_g
  SELECT * FROM tabel_guru;
 ```
 ## hasil
-![](remed/aset/ss3.png)
+![](aset/ss3.png)
 ## analisis
 1. `SELECT *`: Ini adalah perintah untuk memilih semua kolom dari tabel yang ditentukan.
 2. `FROM tabel_guru`: Ini adalah spesifikasi tabel yang akan diambil datanya. Dalam hal ini, tabelnya adalah `tabel_guru`.
@@ -94,7 +94,7 @@ SELECT * FROM tabel_guru
     -> WHERE nama_depan = "rusdyansyar";
 ```
 ## hasil
-![](remed/aset/ss4.png)
+![](aset/ss4.png)
 ## analisis
 1. `SELECT *`: Ini adalah perintah untuk memilih semua kolom dari tabel yang ditentukan.
 2. `FROM tabel_guru`: Ini adalah spesifikasi tabel yang akan diambil datanya. Dalam hal ini, tabelnya adalah `tabel_guru`.
@@ -107,7 +107,7 @@ Query ini berhasil menemukan dan menampilkan satu baris data dari tabel `tabel_g
  UPDATE tabel_guru SET nama_belakang ="Ganteng" WHERE id_guru="2";
 ```
 ## hasil
-![](remed/aset/ss5.png)
+![](aset/ss5.png)
 ## analisis
 1. `UPDATE tabel_guru`: Ini adalah perintah untuk memperbarui data pada tabel `tabel_guru`.
 2. `SET nama_belakang = "Ganteng"`: Ini adalah bagian yang menentukan kolom yang akan diperbarui dan nilai baru yang akan diberikan. Dalam hal ini, kolom `nama_belakang` akan diubah menjadi `"Ganteng"`.
@@ -120,7 +120,7 @@ update query `UPDATE tabel_guru SET nama_belakang ="Ganteng" WHERE id_guru="2";`
  DELETE FROM tabel_guru WHERE id_guru=5;
 ```
 ## hasil
-![](remed/aset/ss6.png)
+![](aset/ss6.png)
 ## analisis
 1. `DELETE FROM tabel_guru`: Ini adalah perintah untuk menghapus data dari tabel `tabel_guru`.
 2. `WHERE id_guru = 5`: Ini adalah klausa filter yang akan membatasi penghapusan hanya pada baris-baris di tabel `tabel_guru` yang memiliki nilai `id_guru` sama dengan `5`.
@@ -134,7 +134,7 @@ SELECT * FROM tabel_guru
     -> ORDER BY usia ASC;
 ```
 ## hasil
-![](remed/aset/ss7.png)
+![](aset/ss7.png)
 ## analisis
 1. `SELECT *`: Ini adalah perintah untuk memilih semua kolom dari tabel.
 2. `FROM tabel_guru`: Ini menentukan tabel yang akan diakses, yaitu `tabel_guru`.
@@ -151,7 +151,7 @@ Pernyataan `SELECT * FROM tabel_guru WHERE mapel LIKE 'Pem%' AND usia < 30 ORDER
     -> WHERE nama_depan LIKE '__%i%';
 ```
 ## hasil
-![](remed/aset/ss8.png)
+![](aset/ss8.png)
 ## analisis
 1. `SELECT id_guru, nama_depan`: Bagian kueri ini menentukan kolom yang akan diambil, dalam hal ini, kolom `id_guru`dan `nama_depan`.
 2. `FROM tabel_guru`: Bagian kueri ini menunjukkan bahwa data akan diambil dari `tabel_guru`tabel.
@@ -168,7 +168,7 @@ Pernyataan `SELECT id_guru, nama_depan FROM tabel_guru WHERE nama_depan LIKE '__
  SELECT CONCAT_WS(" ",nama_depan, nama_belakang) AS nama_lengkap FROM tabel_guru;
 ```
 ## hasil
-![](remed/aset/ss9.png)
+![](aset/ss9.png)
 ## analisis
 - `CONCAT_WS(" ",nama_depan, nama_belakang)`:
     - `CONCAT_WS`: Fungsi ini menggabungkan beberapa string dengan separator yang ditentukan.
@@ -186,7 +186,7 @@ ALTER TABLE tabel_guru
     -> ADD status enum("PNS", "PPPK", "Honorer");
 ```
 ## hasil
-![](remed/aset/ss10.png)
+![](aset/ss10.png)
 ## analisis
 - **`ALTER TABLE tabel_guru`:** Bagian ini menunjukkan tabel yang ingin dimodifikasi, yaitu tabel `tabel_guru`.
 - **`ADD status`:** Bagian ini menambahkan kolom baru bernama `status` ke tabel `tabel_guru`.
@@ -199,7 +199,7 @@ Perintah SQL tersebut menambahkan kolom baru yang disebut `status` ke tabel `tab
  SELECT nama_depan, MAX(usia) AS usia FROM tabel_guru;
 ```
 ## hasil
-![](remed/aset/ss11.png)
+![](aset/ss11.png)
 ## analisis
 - `nama_depan`: Mengambil nilai dari kolom `nama_depan` di tabel `tabel_guru`.
 - `MAX(usia) AS usia`:
