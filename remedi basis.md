@@ -207,4 +207,4 @@ Perintah SQL tersebut menambahkan kolom baru yang disebut `status` ke tabel `tab
     - `AS usia`: Memberi alias `usia` pada hasil perhitungan nilai maksimum.
 - `tabel_guru`: Menunjukkan tabel yang ingin dipilih datanya, yaitu tabel `tabel_guru`.
 ## kesimpulan
-Perintah SQL ini akan memilih nama depan dan usia maksimum dari setiap guru di tabel `tabel_guru`. Hasilnya adalah tabel baru dengan dua kolom: `nama_depan` dan `usia`. Kolom `usia` berisi usia maksimum dari setiap guru.
+Perintah SQL ini akan memilih nama depan dan usia maksimum dari setiap guru di tabel `tabel_guru`. Hasilnya adalah tabel baru dengan dua kolom: `nama_depan` dan `usia`. Kolom `usia` berisi usia maksimum dari setiap guru. 
