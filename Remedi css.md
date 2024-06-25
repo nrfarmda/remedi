@@ -250,9 +250,9 @@ body {
       }
 ```
 ### hasil
-![](aset/ss.png)
+![](asett/ss.png)
 
-![](remed/remed-css/aset/ss1.png)
+![](asett/ss1.png)
 ### analisis
 #### HTML
 - `<!DOCTYPE html>`: menunjukkan bahwa dokumen ini menggunakan HTML5.

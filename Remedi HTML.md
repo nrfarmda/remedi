@@ -65,7 +65,7 @@
     - Kolom kedua memiliki atribut yang sama dengan kolom pertama.
     - Di dalam kolom ini terdapat tautan (`<a>`) dengan atribut `href` yang menghubungkan ke halaman "order bunga.html" dan menampilkan teks "Pesan Bunga".
 ### hasil
-![](remed/remed-HTML/aset/ss.png)
+![](asettt/ss.png)
 ## List
 ```html
 <html>
@@ -153,7 +153,8 @@
 7. Tautan Kembali ke Home:
     - Terdapat tautan (`<a>`) dengan atribut `href` yang menghubungkan ke halaman "index.html" dan menampilkan teks "kembali ke home".
 ### hasil
-![](remed/remed-HTML/aset/ss1.png)
+![](asettt/ss1.png)
+
 ## Order
 ```html
 <html> 
@@ -225,4 +226,4 @@
     - Tautan pertama mengarah ke halaman "list bungaa.html" dengan teks "Liat daftar Bunga".
     - Tautan kedua mengarah ke halaman "index.html" dengan teks "Kembali ke home".
 ### hasil
-![](remed/remed-HTML/aset/ss2.png)
+![](asettt/ss2.png)
